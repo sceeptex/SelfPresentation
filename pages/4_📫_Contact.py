@@ -2,9 +2,8 @@ import streamlit as st
 import os
 from datetime import datetime
 
-st.set_page_config(page_icon="🎓",
+st.set_page_config(page_title='Tobias Contact', page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
-
 
 st.title('Get in contact with me😊')
 # st.write('Please fill out the form below to contact me:')

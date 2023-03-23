@@ -21,7 +21,8 @@ import numpy as np
 from sklearn.tree import export_graphviz
 import graphviz
 
-st.set_page_config("Machine Learning", page_icon="🎓",
+
+st.set_page_config(page_title='Tobias Machine Learning', page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
 
 

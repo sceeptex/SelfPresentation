@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-st.set_page_config(page_icon="🎓",
+st.set_page_config(page_title='Tobias Exploratory Project Portfolio', page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
 
 

@@ -7,7 +7,8 @@ from sklearn.datasets import load_iris
 
 # Set app title
 # Load dataset
-st.set_page_config("Exploratory Data Analysis", page_icon="🎓",
+
+st.set_page_config(page_title='Tobias Exploratory Data Analysis', page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
 
 

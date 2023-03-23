@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 #               """
 #                    }
 
-st.set_page_config(page_title='Tobias Fechner', page_icon="🎓",
+st.set_page_config(page_title='Tobias Portfolio', page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
 
 
