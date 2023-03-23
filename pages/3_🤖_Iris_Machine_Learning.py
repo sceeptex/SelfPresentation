@@ -54,7 +54,7 @@ pipeline = Pipeline([
 ])
 
 # Create a Streamlit web application
-st.title('Create your first Machine Learning Model')
+st.title('Built your first Machine Learning Model')
 
 # Create a form for the user to select hyperparameters
 with st.form('hyperparameters'):
@@ -216,3 +216,11 @@ with st.expander("Save", True):
         file_name="iris_model.pkl",
         mime="application/octet-stream",
     )
+
+# Footer
+st.markdown("---")
+st.header("Let's connect!")
+link = '[LinkedIn](https://www.linkedin.com/in/tobias-fechner-/)'
+st.markdown(link, unsafe_allow_html=True)
+link = "[Github](https://github.com/sceeptex)"
+st.markdown(link, unsafe_allow_html=True)

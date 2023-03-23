@@ -32,3 +32,11 @@ if st.button('Submit'):
         st.write('Thank you for contacting me! 😊')
     except:
         st.warning('Please fill in your contact details and a message', icon="⚠️")
+
+# Footer
+st.markdown("---")
+st.header("Let's connect!")
+link = '[LinkedIn](https://www.linkedin.com/in/tobias-fechner-/)'
+st.markdown(link, unsafe_allow_html=True)
+link = "[Github](https://github.com/sceeptex)"
+st.markdown(link, unsafe_allow_html=True)
