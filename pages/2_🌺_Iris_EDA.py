@@ -6,9 +6,9 @@ import plotly.graph_objects as go
 from sklearn.datasets import load_iris
 
 # Set app title
-st.set_page_config(page_title='Exploratory Data Analysis')  # layout='wide'
-
 # Load dataset
+st.set_page_config("Exploratory Data Analysis", page_icon="🎓",
+                   initial_sidebar_state="expanded")  # layout='wide'
 
 
 @st.cache_data
@@ -28,7 +28,8 @@ data = load_data()
 
 image = Image.open('images/51518irisimg1.png')
 
-st.image(image)
+st.write('## The Iris Classification Challenge')
+st.image(image, caption="The three classes of flowers")
 st.markdown("""
 The Iris flower data set or Fisher's Iris data set is a multivariate data set used and made famous by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. 
 Two of the three species were collected in the Gaspé Peninsula "all from the same pasture, and picked on the same day and measured at the same time by the same person with the same apparatus".
