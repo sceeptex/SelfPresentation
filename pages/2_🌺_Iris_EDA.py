@@ -26,7 +26,7 @@ data = load_data()
 # with st.expander("Exploratory Data Analysis (EDA)"):
 
 
-image = Image.open('images/51518irisimg1.png')
+image = Image.open('references/51518irisimg1.png')
 
 st.title('## The Iris Classification Challenge')
 st.image(image, caption="The three classes of flowers")
