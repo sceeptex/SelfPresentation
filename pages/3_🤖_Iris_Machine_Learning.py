@@ -3,7 +3,6 @@ import sys
 import time
 import pickle
 import matplotlib as plt
-import shap
 from sklearn.exceptions import NotFittedError
 from PIL import Image
 import streamlit as st
