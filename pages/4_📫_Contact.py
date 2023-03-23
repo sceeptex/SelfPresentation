@@ -6,7 +6,7 @@ st.set_page_config(page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
 
 
-st.title('Contact Me')
+st.title('Get in contact with me😊')
 # st.write('Please fill out the form below to contact me:')
 # name = st.text_input('Name')
 # email = st.text_input('Email')
