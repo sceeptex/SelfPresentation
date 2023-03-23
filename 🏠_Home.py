@@ -15,7 +15,7 @@ st.set_page_config(page_title='Tobias Fechner', page_icon="🎓",
 st.title('Welcome Everyone 😊')
 st.write('My name is Tobias and I am an aspiring Data Science student with 4+ years of experience in IT and AI/ML Research who is passionate about building Machine Learning systems that have a real-world impact. I have strong technical skills, especially in Python, Machine Learning, Deep Learning, and databases, as well as an academic background in mathematics, programming, business and statistics.')
 st.write('My passion is solving business challenges with unique approaches and communicating complex ideas to business stakeholders.')
-st.write('Feel free to connect with me and to explore my website')
+st.write('Feel free to connect with me and to explore my website.')
 
 
 def create_wordcloud(skills):
@@ -40,7 +40,7 @@ sections = {
     "Data Science": ["Statistics", "Machine_Learning", "Deep_Learning", "Natural_Language_Processing", "Computer_Vision", "Time_Series"],
     "Data Analysis": ["EDA", "Data Visualization", "Matplotlib", "Plotly", "NumPy", "Pandas"],
     "Web Development": ["Python Backend", "Python Frontend", "Flask REST API", "Dash", "Streamlit", "HTML5", "CSS", "React Native"],
-    "Tools & Frameworks": ["Git", "Jupyter_Notebooks", "SciKit-learn", "TensorFlow", "Keras", "PyTorch", "PyTorch_Lightning", "Vision_Transformers", "BayesianSearch", "Optuna", "TensorBoard", "MLflow", "Lime", "SHAP", "Selenium", "Beautifulsoup", "Microsoft_PowerBI", "Microsoft_PowerAutomate", "LaTeX"],
+    "Tools & Frameworks": ["Git", "SQL", "NoSQL", "Jupyter_Notebooks", "SciKit-learn", "TensorFlow", "Keras", "PyTorch", "PyTorch_Lightning", "Vision_Transformers", "BayesianSearch", "Optuna", "TensorBoard", "MLflow", "Lime", "SHAP", "Selenium", "Beautifulsoup", "Microsoft_PowerBI", "Microsoft_PowerAutomate", "LaTeX"],
     "Project Management": ["SCRUM", "BPMN", "UML"],
     "Cloud Computing": ["Google Cloud_Platform", "Docker"],
     "Database Management": ["SQL", "NoSQL", "Neo4J"]

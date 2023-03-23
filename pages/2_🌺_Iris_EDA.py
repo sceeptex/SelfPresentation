@@ -28,7 +28,7 @@ data = load_data()
 
 image = Image.open('references/51518irisimg1.png')
 
-st.title('## The Iris Classification Challenge')
+st.title('The Iris Classification Challenge')
 st.image(image, caption="The three classes of flowers")
 st.markdown("""
 The Iris flower data set or Fisher's Iris data set is a multivariate data set used and made famous by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. 
