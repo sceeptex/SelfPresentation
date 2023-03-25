@@ -29,7 +29,7 @@ data = load_data()
 
 image = Image.open('references/51518irisimg1.png')
 
-st.title('The Iris Classification Challenge')
+st.title('Explore the Iris Dataset')
 st.image(image, caption="The three classes of flowers")
 st.markdown("""
 The Iris flower data set or Fisher's Iris data set is a multivariate data set used and made famous by the British statistician and biologist Ronald Fisher in his 1936 paper The use of multiple measurements in taxonomic problems as an example of linear discriminant analysis. It is sometimes called Anderson's Iris data set because Edgar Anderson collected the data to quantify the morphologic variation of Iris flowers of three related species. 
@@ -39,6 +39,9 @@ The data set consists of 50 samples from each of three species of Iris (Iris set
 [[1]](https://en.wikipedia.org/wiki/Iris_flower_data_set)"
 
 """)
+
+st.info('Every graph is interactive. Learn how to navigate Plotly graphs: https://plotly.com/chart-studio-help/zoom-pan-hover-controls/. If you can\'t see the chart anymore, click the auto-scaling button.', icon="ℹ️")
+
 
 st.write('## Dataset')
 st.write(data.head())
@@ -277,4 +280,3 @@ with col1:
                    'https://www.linkedin.com/in/tobias-fechner-/')
 with col2:
     clickable_card("references/GitHub2.jpeg", 'https://github.com/sceeptex')
-from PIL import Image

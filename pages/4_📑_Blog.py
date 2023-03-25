@@ -3,7 +3,7 @@ import streamlit as st
 # write your streamlit code here
 
 st.set_page_config(page_title='Tobias Blog', page_icon="🎓",
-                   initial_sidebar_state="expanded", layout='wide')  # layout='wide'
+                   initial_sidebar_state="collapsed", layout='wide')  # layout='wide'
 
 
 blog_posts = [
@@ -73,3 +73,31 @@ for i, blog_post in enumerate(blog_posts):
         else:
             markdown_text += '[{}]({})'.format(key, value)
     column.markdown(markdown_text, unsafe_allow_html=True)
+
+
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.markdown('---')
+
+
+def clickable_card(image_url: str, redirect_url: str):
+    # Load image and create card
+    image = Image.open(image_url)
+    st.image(image, width=300, use_column_width=True)
+    card = st.empty()
+    card.markdown(f'<div style="border-radius: 10px; padding: 10px; background-color: white;">'
+                  f'<a href="{redirect_url}" target="_blank">'
+                  f'<h3 style="margin: 0;">Click Here</h3></a></div>', unsafe_allow_html=True)
+
+
+columns = st.columns([1.5, 5, 1, 5, 1.5])
+with columns[1]:
+    st.header("Let's connect!")
+columns = st.columns([1.5, 5, 1, 5, 1.5])
+with columns[1]:
+    clickable_card("references/linkedin.png",
+                   'https://www.linkedin.com/in/tobias-fechner-/')
+with columns[3]:
+    clickable_card("references/GitHub2.jpeg", 'https://github.com/sceeptex')
