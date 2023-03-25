@@ -49,32 +49,32 @@ sections = {
 tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(list(sections.keys()))
 
 with tab1:
-    st.image(r'references\wordcloud\Data_Science.jpg')
+    st.image('references/wordcloud/Data_Science.jpg')
     # skills = sections['Data Science']
     # fig = create_wordcloud(skills)
     # st.pyplot(fig)
 with tab2:
-    st.image(r'references\wordcloud\Data_Analysis.jpg')
+    st.image('references/wordcloud/Data_Analysis.jpg')
     # skills = sections['Data Analysis']
     # fig = create_wordcloud(skills)
     # st.pyplot(fig)
 with tab3:
-    st.image(r'references\wordcloud\Web_Development.jpg')
+    st.image('references/wordcloud/Web_Development.jpg')
     # skills = sections['Web Development']
     # fig = create_wordcloud(skills)
     # st.pyplot(fig)
 with tab4:
-    st.image(r'references\wordcloud\Tools_Frameworks.jpg')
+    st.image('references/wordcloud/Tools_Frameworks.jpg')
     # skills = sections['Tools & Frameworks']
     # fig = create_wordcloud(skills)
     # st.pyplot(fig)
 with tab5:
-    st.image(r'references\wordcloud\Project_Management.jpg')
+    st.image('references/wordcloud/Project_Management.jpg')
     # skills = sections['Project Management']
     # fig = create_wordcloud(skills)
     # st.pyplot(fig)
 with tab6:
-    st.image(r'references\wordcloud\Cloud_Computing.jpg')
+    st.image('references/wordcloud/Cloud_Computing.jpg')
     # skills = sections['Cloud Computing']
     # fig = create_wordcloud(skills)
     # st.pyplot(fig)

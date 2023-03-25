@@ -1,5 +1,4 @@
 from PIL import Image
-from streamlit_card import card
 import streamlit as st
 # write your streamlit code here
 

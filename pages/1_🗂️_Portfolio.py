@@ -26,13 +26,13 @@ st.subheader("Predicting Rent Prices in Mannheim: A Case Study with XGBoost")
 st.write("Sep 2021 - Dec 2021")
 col1, col2 = st.columns(2)
 with col1:
-    st.image(r'references\portfolio\rent0.png')
-    st.image(r'references\portfolio\rent2.png')
-    st.image(r'references\portfolio\rent4.png')
+    st.image('references/portfolio/rent0.png')
+    st.image('references/portfolio/rent2.png')
+    st.image('references/portfolio/rent4.png')
 with col2:
-    st.image(r'references\portfolio\rent1.png')
-    st.image(r'references\portfolio\rent3.png')
-    st.image(r'references\portfolio\rent5.png')
+    st.image('references/portfolio/rent1.png')
+    st.image('references/portfolio/rent3.png')
+    st.image('references/portfolio/rent5.png')
 with st.expander('Learn more:', True):
     st.write("""
     In this university project, we used regression models and the XGBoost algorithm to predict rent prices for a dataset of rental properties in Germany. We collected and cleaned the dataset, trained a machine learning model using XGBoost, and evaluated its performance. We also compared our results to other regression methods and found that our model was able to provide more accurate and reliable predictions. Furthermore, we optimized the model hyperparameters with a Bayesian Search algorithm and achieved even better results. In addition to our technical findings, we also made recommendations for our peers on the best locations and types of apartments to consider when looking for a flat in Mannheim. This project demonstrates the effectiveness of XGBoost for rent price prediction and provides valuable insights into the factors that influence rent prices in Mannheim""")
