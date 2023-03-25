@@ -3,7 +3,7 @@ import streamlit as st
 # write your streamlit code here
 
 st.set_page_config(page_title='Tobias Blog', page_icon="🎓",
-                   initial_sidebar_state="collapsed", layout='wide')  # layout='wide'
+                   initial_sidebar_state="expanded", layout='wide')  # layout='wide'
 
 
 blog_posts = [
@@ -32,21 +32,31 @@ blog_posts = [
         "summary": "PyTorch Lightning is a deep learning framework that simplifies and accelerates the development of PyTorch models. It provides a high-level interface that abstracts away the boilerplate code and engineering details, allowing you to focus on the research logic and code readability.\n\nOne of the main benefits of PyTorch Lightning is that it enables you to scale your models to run on any hardware (CPU, GPU, or TPU) without changing the source code. You can also use 16-bit precision to train your models faster and with less memory consumption. PyTorch Lightning also automates most of the training loop, such as logging, checkpointing, validation, and testing. Moreover, PyTorch Lightning follows a modular design that decouples the research code from the engineering code, making your models more readable and reproducible.",
         "image": "references/posts/pytorchLighning.png",
         "image2": "references/posts/pytorchAdvantages.png",
-        "links": {"Pytorch Lightning": "https://lightning.ai/docs/pytorch/stable/", "Easy Start": "https://lightning.ai/docs/pytorch/stable/model/train_model_basic.html", "YouTube Playlist": "https://www.youtube.com/playlist?list=PLaMu-SDt_RB6-e7GJRQ6cAssjMizOOZUP", "Credit Graphics": "https://www.assemblyai.com/blog/pytorch-lightning-for-dummies/"}
+        "links": {"Pytorch Lightning": "https://lightning.ai/docs/pytorch/stable/", "Easy Start": "https://lightning.ai/docs/pytorch/stable/model/train_model_basic.html", "YouTube Playlist": "https://www.youtube.com/playlist?list=PLaMu-SDt_RB6-e7GJRQ6cAssjMizOOZUP", "Credit for Graphics": "https://www.assemblyai.com/blog/pytorch-lightning-for-dummies/"}
     },
+    {
+        "title": "Tree-Based Pipeline Optimization Tool (TPOT): AutoML for Random Forests",
+        "summary": "TPOT stands for Tree-based Pipeline Optimization Tool. It is an open-source library that leverages the popular scikit-learn library for data preprocessing and modeling, and uses a genetic algorithm to search for the best pipeline for a given dataset. A pipeline consists of a series of data transformations and a machine learning model, along with their hyperparameters. TPOT tries to find the optimal combination of these elements by exploring thousands of possible pipelines and evaluating their performance on a cross-validation score.",
+        "image": "references/posts/tpot0.png",
+        "image2": "references/posts/tpot.png",
+        "links": {"GitHub": "https://github.com/EpistasisLab/tpot", "Tutorial and Credit for Graphics": "https://machinelearningmastery.com/tpot-for-automated-machine-learning-in-python/", "Official Website": "http://automl.info/tpot/"}
+    },
+
     # add more blog posts here
 ]
-
-st.title("My Data Science Blog")
+columns = st.columns([1.5, 5, 1, 5, 1.5])
+with columns[1]:
+    st.title("My Data Science Blog")
 
 st.write("")
 
-columns = st.columns(2)
+columns = st.columns([1.5, 5, 1, 5, 1.5])
 
+# col1, col2, col3, col4, col5 = st.columns([2, 5, 1, 5, 2])
 
 for i, blog_post in enumerate(blog_posts):
     # select the column based on the index
-    column = columns[i % 2]
+    column = columns[(i % 2)*2+1]
 
     column.markdown("## {}".format(blog_post['title']))
     column.image(blog_post["image"], use_column_width=True)
