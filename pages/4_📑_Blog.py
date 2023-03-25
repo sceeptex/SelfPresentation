@@ -23,8 +23,8 @@ blog_posts = [
     {
         "title": "LUX: A Python API for Intelligent Visual Discovery",
         "summary": "Lux is a Python library that facilitate fast and easy data exploration by automating the visualization and data analysis process. By simply printing out a dataframe in a Jupyter notebook, Lux recommends a set of visualizations highlighting interesting trends and patterns in the dataset. Visualizations are displayed via an interactive widget that enables users to quickly browse through large collections of visualizations and make sense of their data.",
-        "image": "references/posts/Lux.png",
-        "image2": "references/posts/lux.gif",
+        # "image": "references/posts/Lux.png",
+        "image": "references/posts/lux.gif",
         "links": {"GitHub": "https://github.com/lux-org/lux", "Notebook Gallery": "https://lux-api.readthedocs.io/en/latest/source/reference/gallery.html"}
     },
     {
