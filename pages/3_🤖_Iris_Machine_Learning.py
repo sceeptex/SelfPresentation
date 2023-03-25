@@ -220,7 +220,21 @@ with st.expander("Save", True):
 # Footer
 st.markdown("---")
 st.header("Let's connect!")
-link = '[LinkedIn](https://www.linkedin.com/in/tobias-fechner-/)'
-st.markdown(link, unsafe_allow_html=True)
-link = "[Github](https://github.com/sceeptex)"
-st.markdown(link, unsafe_allow_html=True)
+
+
+def clickable_card(image_url: str, redirect_url: str):
+    # Load image and create card
+    image = Image.open(image_url)
+    st.image(image, width=300, use_column_width=True)
+    card = st.empty()
+    card.markdown(f'<div style="border-radius: 10px; padding: 10px; background-color: white;">'
+                  f'<a href="{redirect_url}" target="_blank">'
+                  f'<h3 style="margin: 0;">Click Here</h3></a></div>', unsafe_allow_html=True)
+
+
+col1, col2 = st.columns(2)
+with col1:
+    clickable_card("references/linkedin.png",
+                   'https://www.linkedin.com/in/tobias-fechner-/')
+with col2:
+    clickable_card("references/GitHub2.jpeg", 'https://github.com/sceeptex')

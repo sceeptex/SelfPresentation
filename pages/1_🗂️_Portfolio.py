@@ -1,3 +1,4 @@
+from PIL import Image
 import streamlit as st
 
 
@@ -11,6 +12,8 @@ st.subheader(
     'Power BI Dashboard for Electric Chargers: Increasing Service Technician Efficiency and Customer Satisfaction')
 st.write('Jan 2022 - Feb 2022')
 
+st.image('references/portfolio/powerBi.jpg',
+         caption="Sample image from https://powerbi.microsoft.com/en-us/desktop/")
 st.write("""The development of the electric charger Dashboard in Power BI is a major step forward for ABB service technicians. With this powerful tool, technicians are able to gain valuable insights into the performance and usage of each EV charger, helping them to provide the best possible service to customers.
 
 Previously, technicians faced challenges in quickly identifying and resolving problems with EV chargers. They had to rely on manual methods to gather data and diagnose issues, which was time-consuming and error-prone. With the electric charger Dashboard in Power BI, this is no longer the case.
@@ -21,14 +24,25 @@ Overall, the electric charger Dashboard in Power BI is a game-changing tool for 
 
 st.subheader("Predicting Rent Prices in Mannheim: A Case Study with XGBoost")
 st.write("Sep 2021 - Dec 2021")
-with st.expander('Learn more:', False):
+col1, col2 = st.columns(2)
+with col1:
+    st.image(r'references\portfolio\rent0.png')
+    st.image(r'references\portfolio\rent2.png')
+    st.image(r'references\portfolio\rent4.png')
+with col2:
+    st.image(r'references\portfolio\rent1.png')
+    st.image(r'references\portfolio\rent3.png')
+    st.image(r'references\portfolio\rent5.png')
+with st.expander('Learn more:', True):
     st.write("""
     In this university project, we used regression models and the XGBoost algorithm to predict rent prices for a dataset of rental properties in Germany. We collected and cleaned the dataset, trained a machine learning model using XGBoost, and evaluated its performance. We also compared our results to other regression methods and found that our model was able to provide more accurate and reliable predictions. Furthermore, we optimized the model hyperparameters with a Bayesian Search algorithm and achieved even better results. In addition to our technical findings, we also made recommendations for our peers on the best locations and types of apartments to consider when looking for a flat in Mannheim. This project demonstrates the effectiveness of XGBoost for rent price prediction and provides valuable insights into the factors that influence rent prices in Mannheim""")
 
 st.subheader(
     "Object detection with Detectron2: The State-of-the-art model from Facebook for object detection")
 st.write("Sep 2021 - Oct 2021")
-with st.expander('Learn more:', False):
+st.image('references/portfolio/detetectron2.gif',
+         caption="https://github.com/facebookresearch/detectron2")
+with st.expander('Learn more:', True):
     st.write("""In this project, we used Detectron2, a powerful object detection framework, to train machine learning models for object detection. By leveraging the latest advancements in deep learning, we were able to achieve impressive performance on our object detection tasks. Our project demonstrates the capabilities of Detectron2 and its potential for real-world applications in fields such as process automation and robotics. Overall, this project showcases the effectiveness of modern deep learning techniques for object detection.""")
 
 st.subheader(
@@ -67,7 +81,21 @@ with st.expander('Learn more:', False):
 # Footer
 st.markdown("---")
 st.header("Let's connect!")
-link = '[LinkedIn](https://www.linkedin.com/in/tobias-fechner-/)'
-st.markdown(link, unsafe_allow_html=True)
-link = "[Github](https://github.com/sceeptex)"
-st.markdown(link, unsafe_allow_html=True)
+
+
+def clickable_card(image_url: str, redirect_url: str):
+    # Load image and create card
+    image = Image.open(image_url)
+    st.image(image, width=300, use_column_width=True)
+    card = st.empty()
+    card.markdown(f'<div style="border-radius: 10px; padding: 10px; background-color: white;">'
+                  f'<a href="{redirect_url}" target="_blank">'
+                  f'<h3 style="margin: 0;">Click Here</h3></a></div>', unsafe_allow_html=True)
+
+
+col1, col2 = st.columns(2)
+with col1:
+    clickable_card("references/linkedin.png",
+                   'https://www.linkedin.com/in/tobias-fechner-/')
+with col2:
+    clickable_card("references/GitHub2.jpeg", 'https://github.com/sceeptex')
