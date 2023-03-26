@@ -8,24 +8,11 @@ st.set_page_config(page_title='Tobias Blog', page_icon="🎓",
 
 blog_posts = [
     {
-        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
-        "summary": "Attention is a key component of Transformer models, but it is also slow and memory-hungry on long sequences. FlashAttention is a new algorithm that reorders the attention computation and leverages classical techniques (tiling, recomputation) to significantly speed it up and reduce memory usage from quadratic to linear in sequence length. FlashAttention also accounts for the IO complexity of attention, which is often overlooked by existing methods. FlashAttention can train Transformers faster than existing baselines on various tasks and sequence lengths, and enable longer context in Transformers, yielding higher quality models and entirely new capabilities.",
-        "image": "references/posts/flashattn_banner.jpg",
-        "links": {"GitHub": "https://github.com/HazyResearch/flash-attention", "Paper": "https://arxiv.org/abs/2205.14135"}
-    },
-    {
         "title": "SimCLR: A Simple Framework for Contrastive Learning of Visual Representations",
         "summary": "Contrastive learning is a technique that aims to learn useful representations of data by comparing similar and dissimilar examples. SimCLR is a framework that simplifies contrastive learning for visual data by using a standard convolutional neural network (CNN) as the encoder and a simple projection head as the contrastive loss function. SimCLR achieves state-of-the-art results on several image classification benchmarks by leveraging large amounts of unlabeled data and data augmentation techniques. SimCLR also demonstrates the benefits of self-supervised pre-training and fine-tuning for downstream tasks.",
         # "image": "references/posts/SimCLR.png",
         "image": "references/posts/SimClrV2.gif",
         "links": {"GitHub": "https://github.com/google-research/simclr", "Paper": "https://arxiv.org/abs/2002.05709"}
-    },
-    {
-        "title": "LUX: A Python API for Intelligent Visual Discovery",
-        "summary": "Lux is a Python library that facilitate fast and easy data exploration by automating the visualization and data analysis process. By simply printing out a dataframe in a Jupyter notebook, Lux recommends a set of visualizations highlighting interesting trends and patterns in the dataset. Visualizations are displayed via an interactive widget that enables users to quickly browse through large collections of visualizations and make sense of their data.",
-        # "image": "references/posts/Lux.png",
-        "image": "references/posts/lux.gif",
-        "links": {"GitHub": "https://github.com/lux-org/lux", "Notebook Gallery": "https://lux-api.readthedocs.io/en/latest/source/reference/gallery.html"}
     },
     {
         "title": "PyTorch Lightning: Framework for Faster and Easier Deep Learning",
@@ -35,11 +22,24 @@ blog_posts = [
         "links": {"Pytorch Lightning": "https://lightning.ai/docs/pytorch/stable/", "Easy Start": "https://lightning.ai/docs/pytorch/stable/model/train_model_basic.html", "YouTube Playlist": "https://www.youtube.com/playlist?list=PLaMu-SDt_RB6-e7GJRQ6cAssjMizOOZUP", "Credit for Graphics": "https://www.assemblyai.com/blog/pytorch-lightning-for-dummies/"}
     },
     {
+        "title": "LUX: A Python API for Intelligent Visual Discovery",
+        "summary": "Lux is a Python library that facilitate fast and easy data exploration by automating the visualization and data analysis process. By simply printing out a dataframe in a Jupyter notebook, Lux recommends a set of visualizations highlighting interesting trends and patterns in the dataset. Visualizations are displayed via an interactive widget that enables users to quickly browse through large collections of visualizations and make sense of their data.",
+        # "image": "references/posts/Lux.png",
+        "image": "references/posts/lux.gif",
+        "links": {"GitHub": "https://github.com/lux-org/lux", "Notebook Gallery": "https://lux-api.readthedocs.io/en/latest/source/reference/gallery.html"}
+    },
+    {
         "title": "Tree-Based Pipeline Optimization Tool (TPOT): AutoML for Random Forests",
         "summary": "TPOT stands for Tree-based Pipeline Optimization Tool. It is an open-source library that leverages the popular scikit-learn library for data preprocessing and modeling, and uses a genetic algorithm to search for the best pipeline for a given dataset. A pipeline consists of a series of data transformations and a machine learning model, along with their hyperparameters. TPOT tries to find the optimal combination of these elements by exploring thousands of possible pipelines and evaluating their performance on a cross-validation score.",
         "image": "references/posts/tpot0.png",
         "image2": "references/posts/tpot.png",
         "links": {"GitHub": "https://github.com/EpistasisLab/tpot", "Tutorial and Credit for Graphics": "https://machinelearningmastery.com/tpot-for-automated-machine-learning-in-python/", "Official Website": "http://automl.info/tpot/"}
+    },
+    {
+        "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+        "summary": "Attention is a key component of Transformer models, but it is also slow and memory-hungry on long sequences. FlashAttention is a new algorithm that reorders the attention computation and leverages classical techniques (tiling, recomputation) to significantly speed it up and reduce memory usage from quadratic to linear in sequence length. FlashAttention also accounts for the IO complexity of attention, which is often overlooked by existing methods. FlashAttention can train Transformers faster than existing baselines on various tasks and sequence lengths, and enable longer context in Transformers, yielding higher quality models and entirely new capabilities.",
+        "image": "references/posts/flashattn_banner.jpg",
+        "links": {"GitHub": "https://github.com/HazyResearch/flash-attention", "Paper": "https://arxiv.org/abs/2205.14135"}
     },
 
     # add more blog posts here
