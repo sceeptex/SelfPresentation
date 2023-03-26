@@ -40,7 +40,7 @@ def clickable_card(image_url: str, redirect_url: str):
     image = Image.open(image_url)
     st.image(image, width=300, use_column_width=True)
     card = st.empty()
-    card.markdown(f'<div style="border-radius: 10px; padding: 10px; background-color: white;">'
+    card.markdown(f'<div style="border-radius: 10px; padding: 10px; ">'
                   f'<a href="{redirect_url}" target="_blank">'
                   f'<h3 style="margin: 0;">Click Here</h3></a></div>', unsafe_allow_html=True)
 

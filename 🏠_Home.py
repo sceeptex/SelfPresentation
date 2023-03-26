@@ -9,12 +9,12 @@ import matplotlib.pyplot as plt
 #               """
 #                    }
 
-st.set_page_config(page_title='Tobias Portfolio', page_icon="🎓",
+st.set_page_config(page_title='Tobias Fechner Digital Portfolio', page_icon="🎓",
                    initial_sidebar_state="expanded")  # layout='wide'
 
 
 st.title('Welcome Everyone 😊')
-st.write('My name is Tobias and I am an aspiring Data Science student with 4+ years of experience in IT and AI/ML Research who is passionate about building Machine Learning systems that have a real-world impact. I have strong technical skills, especially in Python, Machine Learning, Deep Learning, and databases, as well as an academic background in mathematics, programming, business and statistics.')
+st.write('My name is Tobias Fechner and I am an aspiring Data Science student with 4+ years of experience in IT and AI/ML Research who is passionate about building Machine Learning systems that have a real-world impact. I have strong technical skills, especially in Python, Machine Learning, Deep Learning, and databases, as well as an academic background in mathematics, programming, business and statistics.')
 st.write('My passion is solving business challenges with unique approaches and communicating complex ideas to business stakeholders.')
 st.write('Feel free to connect with me and to explore my website.')
 
@@ -90,7 +90,7 @@ def clickable_card(image_url: str, redirect_url: str):
     image = Image.open(image_url)
     st.image(image, width=300, use_column_width=True)
     card = st.empty()
-    card.markdown(f'<div style="border-radius: 10px; padding: 10px; background-color: white;">'
+    card.markdown(f'<div style="border-radius: 10px; padding: 10px;">'
                   f'<a href="{redirect_url}" target="_blank">'
                   f'<h3 style="margin: 0;">Click Here</h3></a></div>', unsafe_allow_html=True)
 
