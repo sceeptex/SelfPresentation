@@ -1,3 +1,5 @@
+import json
+from streamlit_lottie import st_lottie
 from PIL import Image
 import streamlit.components.v1 as components
 import streamlit as st
@@ -14,9 +16,17 @@ st.set_page_config(page_title='Tobias Fechner Digital Portfolio', page_icon="ðŸŽ
 
 
 st.title('Welcome Everyone ðŸ˜Š')
+# st.image('references/animations/welcome.gif')
+
 st.write('My name is Tobias Fechner and I am an aspiring Data Science student with 4+ years of experience in IT and AI/ML Research who is passionate about building Machine Learning systems that have a real-world impact. I have strong technical skills, especially in Python, Machine Learning, Deep Learning, and databases, as well as an academic background in mathematics, programming, business and statistics.')
-st.write('My passion is solving business challenges with unique approaches and communicating complex ideas to business stakeholders.')
+st.write('My passion is solving business challenges with unique approaches and communicating complex ideas to business stakeholders. For this the overlap between machine learning, software engineering, statistics, and business knowledge is crucial for successful data science projects.')
 st.write('Feel free to connect with me and to explore my website.')
+
+with open("references/animations/lottie_ml.json") as f:
+    lottie = json.load(f)
+_, col2, _ = st.columns([0.5, 4, 0.5])
+with col2:
+    st_lottie(lottie)
 
 
 # def create_wordcloud(skills):
