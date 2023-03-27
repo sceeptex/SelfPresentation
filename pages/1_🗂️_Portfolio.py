@@ -42,6 +42,9 @@ st.subheader(
 st.write("Sep 2021 - Oct 2021")
 st.image('references/portfolio/detetectron2.gif',
          caption="https://github.com/facebookresearch/detectron2")
+st.image('references/portfolio/yolo2.gif',
+         use_column_width=True,
+         caption="https://commons.wikimedia.org/wiki/File:Yolo5.gif")
 with st.expander('Learn more:', True):
     st.write("""In this project, we used Detectron2, a powerful object detection framework, to train machine learning models for object detection. By leveraging the latest advancements in deep learning, we were able to achieve impressive performance on our object detection tasks. Our project demonstrates the capabilities of Detectron2 and its potential for real-world applications in fields such as process automation and robotics. Overall, this project showcases the effectiveness of modern deep learning techniques for object detection.""")
 
