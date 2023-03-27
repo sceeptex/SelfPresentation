@@ -19,7 +19,7 @@ st.title('Welcome Everyone 😊')
 # st.image('references/animations/welcome.gif')
 
 st.write('My name is Tobias Fechner and I am an aspiring Data Science student with 4+ years of experience in IT and AI/ML Research who is passionate about building Machine Learning systems that have a real-world impact. I have strong technical skills, especially in Python, Machine Learning, Deep Learning, and databases, as well as an academic background in mathematics, programming, business and statistics.')
-st.write('My passion is solving business challenges with unique approaches and communicating complex ideas to business stakeholders. For this the overlap between machine learning, software engineering, statistics, and business knowledge is crucial for successful data science projects.')
+st.write('My passion is solving business challenges with unique approaches and communicating complex ideas to business stakeholders. The overlap between machine learning, software engineering, statistics, and business knowledge is crucial for successful data science projects.')
 st.write('Feel free to connect with me and to explore my website.')
 
 with open("references/animations/lottie_ml.json") as f:
