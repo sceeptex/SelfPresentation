@@ -8,6 +8,12 @@ st.set_page_config(page_title='Tobias Fechner Blog', page_icon="🎓",
 
 blog_posts = [
     {
+        "title": "Sparks of Artificial General Intelligence: Early experiments with GPT-4",
+        "summary": "Microsoft Research has investigated an early version of OpenAI’s GPT-4. They found that this version of GPT-4, along with other large language models (LLMs) such as ChatGPT and Google’s PaLM, exhibit more general intelligence than previous AI models. GPT-4 can solve novel and difficult tasks that span mathematics, coding, vision, medicine, law, psychology and more without needing any special prompting. Its performance is strikingly close to human-level performance and often vastly surpasses prior models such as ChatGPT. The researchers believe that GPT-4 could reasonably be viewed as an early version of an artificial general intelligence (AGI) system. They also discuss the challenges ahead for advancing towards deeper and more comprehensive versions of AGI.",
+        "image": "references/posts/agi_puzzle.png",
+        "links": {"Paper": "https://arxiv.org/abs/2303.12712"}
+    }
+    {
         "title": "SimCLR: A Simple Framework for Contrastive Learning of Visual Representations",
         "summary": "Contrastive learning is a technique that aims to learn useful representations of data by comparing similar and dissimilar examples. SimCLR is a framework that simplifies contrastive learning for visual data by using a standard convolutional neural network (CNN) as the encoder and a simple projection head as the contrastive loss function. SimCLR achieves state-of-the-art results on several image classification benchmarks by leveraging large amounts of unlabeled data and data augmentation techniques. SimCLR also demonstrates the benefits of self-supervised pre-training and fine-tuning for downstream tasks.",
         # "image": "references/posts/SimCLR.png",
