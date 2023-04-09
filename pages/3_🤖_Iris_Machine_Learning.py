@@ -54,7 +54,9 @@ pipeline = Pipeline([
 ])
 
 # Create a Streamlit web application
-st.title('Built your first Machine Learning Model to Classify the Iris Dataset')
+st.title('Built your first Machine Learning Model')
+st.caption("Explore my skills in machine learning, data visualization and error analysis based on the Iris dataset.")
+
 
 # Create a form for the user to select hyperparameters
 with st.form('hyperparameters'):

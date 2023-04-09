@@ -5,6 +5,7 @@ import streamlit.components.v1 as components
 import streamlit as st
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+from streamlit_extras.switch_page_button import switch_page
 
 # embed_component = {'linkedin': """<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 # <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="tobias-fechner-" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://de.linkedin.com/in/tobias-fechner-?trk=profile-badge">Tobias Fechner</a></div>
@@ -20,7 +21,7 @@ st.title('Welcome Everyone 😊')
 
 st.write('My name is Tobias Fechner and I am an aspiring Data Science student with 4+ years of experience in IT and AI/ML Research who is passionate about building Machine Learning systems that have a real-world impact. I have strong technical skills, especially in Python, Machine Learning, Deep Learning, and databases, as well as an academic background in mathematics, programming, business and statistics.')
 st.write("""My passion is solving business challenges with unique approaches and communicating 
-            complex ideas to business stakeholders. For this purpose, it is important to combine different disciplines in the field of data science such as machine learning, software engineering, statistics, and domain knowledge.""")
+            complex ideas to business stakeholders. For this purpose, it is important to combine different disciplines in the field of data science such as machine learning, software engineering, and statistics""")
 st.write('Feel free to connect with me and to explore my digital portfolio.')
 
 with open("references/animations/lottie_ml.json") as f:
@@ -91,6 +92,30 @@ with tab6:
     # st.pyplot(fig)
 
 
+
+st.header("Explore My Data Science Portfolio")
+st.write("""The purpose of this portfolio website is to showcase my expertise in the field of data science, including my experience in data analysis, machine learning, and statistical modeling. I have included various projects that demonstrate my skills and knowledge in these areas, along with explanations of my thought processes and methodologies.""")
+col1, col2 = st.columns(2)
+with col1:
+    button = st.button("🗂️ Portfolio")
+    if button:
+        switch_page("portfolio")
+with col2:
+    button = st.button("📑 Blog")
+    if button:
+        switch_page("blog")
+col1, col2 = st.columns(2)
+with col1:
+    button = st.button("🌺 Iris Exploratory Data Analysis")
+    if button:
+        switch_page("iris eda")
+with col2:
+    button = st.button("🤖 Iris Machine Learning")
+    if button:
+        switch_page("Iris Machine Learning")
+
+
+
 # Footer
 st.markdown("---")
 st.header("Let's connect!")
@@ -118,3 +143,4 @@ with col2:
 # st.markdown(link, unsafe_allow_html=True)
 # link = "[Github](https://github.com/sceeptex)"
 # st.markdown(link, unsafe_allow_html=True)
+
